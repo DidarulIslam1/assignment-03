@@ -5,14 +5,210 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fruit-brust</title>
+    <!-- tailwind & daisy UI cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- tailwind customize color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'first-color': '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .google-font {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="google-font">
     <header>
 
     </header>
-    <main>
-
+    <main class="container mx-auto">
+        <!-- deal of the day section -->
+        <section class="px-5 mt-24 mb-24 lg:px-10">
+            <div class="flex flex-col md:text-center lg:flex lg:flex-row mb-12">
+                <div class="flex-1 space-y-4 mb-5 lg:items-center">
+                    <h3 class="text-5xl font-extrabold text-[#121212]">Deal Of The Day</h3>
+                    <p class="text-base font-medium text-[#12121299]">Indulge in today's juicy delight! Our Deal of the
+                        Day offers handpicked, ripe fruits at
+                        unbeatable prices. Hurry, these fresh, flavorful bargains won't last long!</p>
+                </div>
+                <div class="flex-1 flex gap-3 justify-center md:justify-center lg:gap-5 lg:justify-end">
+                    <div>
+                        <h2 class="text-5xl font-extrabold text-[#121212]">29</h2>
+                        <p class="text-base font-medium text-[#12121299]">Days</p>
+                    </div>
+                    <img class="w-6" src="images/three-dots-vertical.svg" alt="">
+                    <div>
+                        <h2 class="text-5xl font-extrabold text-[#121212]">15</h2>
+                        <p class="text-base font-medium text-[#12121299]">Hours</p>
+                    </div>
+                    <img class="w-6" src="images/three-dots-vertical.svg" alt="">
+                    <div>
+                        <h2 class="text-5xl font-extrabold text-[#121212]">25</h2>
+                        <p class="text-base font-medium text-[#12121299]">Minutes</p>
+                    </div>
+                    <img class="w-6" src="images/three-dots-vertical.svg" alt="">
+                    <div>
+                        <h2 class="text-5xl font-extrabold text-[#121212]">08</h2>
+                        <p class="text-base font-medium text-[#12121299]">Seconds</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center gap-2 lg:flex lg:flex-row">
+                <div class="card w-96 border bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-3">
+                        <h2 class="card-title text-2xl font-bold text-[#121212]">12.90$ - 18.85$</h2>
+                        <p class="text-base font-medium text-[#12121299]">Apple</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <p class="text-lg font-bold text-[#F85559]">Details</p>
+                    </div>
+                </div>
+                <div class="card w-96 border bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-3">
+                        <h2 class="card-title text-2xl font-bold text-[#121212]">12.90$ - 18.85$</h2>
+                        <p class="text-base font-medium text-[#12121299]">Orange</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <p class="text-lg font-bold text-[#F85559]">Details</p>
+                    </div>
+                </div>
+                <div class="card w-96 border bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-3">
+                        <h2 class="card-title text-2xl font-bold text-[#121212]">12.90$ - 18.85$</h2>
+                        <p class="text-base font-medium text-[#12121299]">Red Dragon</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <p class="text-lg font-bold text-[#F85559]">Details</p>
+                    </div>
+                </div>
+                <div class="card w-96 border bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-3">
+                        <h2 class="card-title text-2xl font-bold text-[#121212]">12.90$ - 18.85$</h2>
+                        <p class="text-base font-medium text-[#12121299]">Banana</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <p class="text-lg font-bold text-[#F85559]">Details</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-12">
+                <button class="btn bg-[#F85559] hover:bg-[#F85559] text-white">show all</button>
+            </div>
+        </section>
+        <!-- Meet the team section -->
+        <section class="px-5 mt-24 mb-24 lg:px-10">
+            <div class="hero min-h-screen" style="background-image: url(images/team.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">You can meet our team experts here</h1>
+                        <p class="mb-5">Explore our seasoned experts, each a maestro in their field. Meet the team
+                            driving innovation, passion, and excellence, ensuring top-notch quality in every project.
+                        </p>
+                        <div class="flex-col gap-5 lg:flex lg:flex-row items-center justify-center">
+                            <div class="flex flex-col mb-5 items-center space-y-4">
+                                <img src="images/member1.png" alt="">
+                                <h3 class="text-2xl font-bold">Awlad Hossain</h3>
+                                <p class="text-base font-medium">Fruits Expert</p>
+                                <div class="flex gap-2">
+                                    <a href=""><img src="images/icons/facebook.png" alt="">
+                                    </a>
+                                    <a href=""><img src="images/icons/insta.png" alt="">
+                                    </a>
+                                    <a href=""><img src="images/icons/twitter.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex flex-col mb-5 items-center space-y-4">
+                                <img src="images/member1.png" alt="">
+                                <h3 class="text-2xl font-bold">Awlad Hossain</h3>
+                                <p class="text-base font-medium">Fruits Expert</p>
+                                <div class="flex gap-2">
+                                    <a href=""><img src="images/icons/facebook.png" alt="">
+                                    </a>
+                                    <a href=""><img src="images/icons/insta.png" alt="">
+                                    </a>
+                                    <a href=""><img src="images/icons/twitter.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex flex-col mb-5 items-center space-y-4">
+                                <img src="images/member1.png" alt="">
+                                <h3 class="text-2xl font-bold">Awlad Hossain</h3>
+                                <p class="text-base font-medium">Fruits Expert</p>
+                                <div class="flex gap-2">
+                                    <a href=""><img src="images/icons/facebook.png" alt="">
+                                    </a>
+                                    <a href=""><img src="images/icons/insta.png" alt="">
+                                    </a>
+                                    <a href=""><img src="images/icons/twitter.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex flex-col mb-5 items-center space-y-4">
+                                <img src="images/member1.png" alt="">
+                                <h3 class="text-2xl font-bold">Awlad Hossain</h3>
+                                <p class="text-base font-medium">Fruits Expert</p>
+                                <div class="flex gap-2">
+                                    <a href=""><img src="images/icons/facebook.png" alt="">
+                                    </a>
+                                    <a href=""><img src="images/icons/insta.png" alt="">
+                                    </a>
+                                    <a href=""><img src="images/icons/twitter.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
