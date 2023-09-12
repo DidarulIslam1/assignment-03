@@ -21,6 +21,7 @@
                 extend: {
                     colors: {
                         'first-color': '#F85559',
+                        'second-color': '#12121299'
                     }
                 }
             }
@@ -34,10 +35,136 @@
 </head>
 
 <body class="google-font">
-    <header>
-
+    <header class="container mx-auto">
+        <div class="navbar bg-base-100 px-5 mt-10 mb-10 lg:px-10">
+            <div class="flex-1">
+                <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+            </div>
+            <div class="flex-none gap-2">
+                <div class="form-control">
+                    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                </div>
+                <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                        <div class="w-10 rounded-full">
+                            <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                        </div>
+                    </label>
+                    <ul tabindex="0"
+                        class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                        <li>
+                            <a class="justify-between">
+                                Profile
+                                <span class="badge">New</span>
+                            </a>
+                        </li>
+                        <li><a>Settings</a></li>
+                        <li><a>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
     <main class="container mx-auto">
+        <!-- banner section start -->
+        <section class="px-5 mt-24 mb-24 lg:px-10">
+            <div class="carousel w-full">
+                <div id="slide1"
+                    class="carousel-item relative w-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px] overflow-hidden rounded-lg">
+                    <img src="./images/banner1.png" class="w-full object-cover" />
+                    <div
+                        class="absolute z-10 flex justify-between transform translate-y-1/2 sm:-translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                    <div class="absolute w-full h-full"></div>
+                    <div
+                        class="absolute w-full h-full flex flex-col items-center pt-10 pb-20 md:pt-20 md:pb-40 text-white text-center">
+                        <h1 class="max-w-2xl text-5xl sm:text-5xl md:text-6xl font-extralight">
+                            Exotic tastes at your doorstep
+                        </h1>
+                        <p class="mt-6 mb-8 text-lg md:text-xl font-medium">We supply highly quality organic
+                            products</p>
+                        <button class="btn bg-[#F85559] hover:bg-[#F85559] text-white border-none">Shop Now</button>
+                    </div>
+                </div>
+                <div id="slide2"
+                    class="carousel-item relative w-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px] overflow-hidden rounded-lg">
+                    <img src="./images/banner2.png" class="w-full object-cover" />
+                    <div
+                        class="absolute z-10 flex justify-between transform translate-y-1/2 sm:-translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                    <div class="absolute w-full h-full"></div>
+                    <div
+                        class="absolute w-full h-full flex flex-col items-center pt-10 pb-20 md:pt-20 md:pb-40 text-white text-center">
+                        <h1 class="max-w-2xl text-5xl sm:text-5xl md:text-6xl font-extralight">
+                            Exotic tastes at your doorstep
+                        </h1>
+                        <p class="mt-6 mb-8 text-lg md:text-xl font-medium">We supply highly quality organic
+                            products</p>
+                        <button class="btn bg-[#F85559] hover:bg-[#F85559] text-white border-none">Shop Now</button>
+                    </div>
+                </div>
+                <div id="slide3"
+                    class="carousel-item relative w-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px] overflow-hidden rounded-lg">
+                    <img src="./images/banner3.png" class="w-full object-cover" />
+                    <div
+                        class="absolute z-10 flex justify-between transform translate-y-1/2 sm:-translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                    <div class="absolute w-full h-full"></div>
+                    <div
+                        class="absolute w-full h-full flex flex-col items-center pt-10 pb-20 md:pt-20 md:pb-40 text-white text-center">
+                        <h1 class="max-w-2xl text-5xl sm:text-5xl md:text-6xl font-extralight">
+                            Exotic tastes at your doorstep
+                        </h1>
+                        <p class="mt-6 mb-8 text-lg md:text-xl font-medium">We supply highly quality organic
+                            products</p>
+                        <button class="btn bg-[#F85559] hover:bg-[#F85559] text-white border-none">Shop Now</button>
+                    </div>
+                </div>
+                <div id="slide4"
+                    class="carousel-item relative w-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px] overflow-hidden rounded-lg">
+                    <img src="./images/banner4.png" class="w-full object-cover" />
+                    <div
+                        class="absolute z-10 flex justify-between transform translate-y-1/2 sm:-translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                    <div class="absolute w-full h-full"></div>
+                    <div
+                        class="absolute w-full h-full flex flex-col items-center pt-10 pb-20 md:pt-20 md:pb-40 text-white text-center">
+                        <h1 class="max-w-2xl text-5xl sm:text-5xl md:text-6xl font-extralight">
+                            Exotic tastes at your doorstep
+                        </h1>
+                        <p class="mt-6 mb-8 text-lg md:text-xl font-medium">We supply highly quality organic
+                            products</p>
+                        <button class="btn bg-[#F85559] hover:bg-[#F85559] text-white border-none">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-lg bg-white rounded hidden md:flex lg:flex justify-center w-[600px] mx-auto">
+                <div class="text-center">
+                    <img src="images/fruit1.png" alt="">
+                    <p class="text-sm text-second-color">Grape</p>
+                </div>
+                <div class="text-center">
+                    <img src="images/fruit3.png" alt="">
+                    <p class="text-sm text-second-color">Mango</p>
+                </div>
+                <div class="text-center">
+                    <img src="images/fruit4.png" alt="">
+                    <p class="text-sm text-second-color">Strawberry</p>
+                </div>
+                <div class="text-center">
+                    <img src="images/fruit5.png" alt="">
+                    <p class="text-sm text-second-color">Pomegranate</p>
+                </div>
+            </div>
+        </section>
         <!-- deal of the day section -->
         <section class="px-5 mt-24 mb-24 lg:px-10">
             <div class="flex flex-col md:text-center lg:flex lg:flex-row mb-12">
@@ -47,7 +174,7 @@
                         Day offers handpicked, ripe fruits at
                         unbeatable prices. Hurry, these fresh, flavorful bargains won't last long!</p>
                 </div>
-                <div class="flex-1 flex gap-3 justify-center md:justify-center lg:gap-5 lg:justify-end">
+                <div class="flex-1 flex gap-3 items-center justify-center md:justify-center lg:gap-5 lg:justify-end">
                     <div>
                         <h2 class="text-5xl font-extrabold text-[#121212]">29</h2>
                         <p class="text-base font-medium text-[#12121299]">Days</p>
@@ -72,7 +199,7 @@
             <div class="flex flex-col items-center gap-2 lg:flex lg:flex-row">
                 <div class="card w-96 border bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                        <img src="/images/fruit6.png" alt="" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center space-y-3">
                         <h2 class="card-title text-2xl font-bold text-[#121212]">12.90$ - 18.85$</h2>
@@ -89,7 +216,7 @@
                 </div>
                 <div class="card w-96 border bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                        <img src="/images/fruit7.png" alt="" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center space-y-3">
                         <h2 class="card-title text-2xl font-bold text-[#121212]">12.90$ - 18.85$</h2>
@@ -106,7 +233,7 @@
                 </div>
                 <div class="card w-96 border bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                        <img src="/images/fruit8.png" alt="" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center space-y-3">
                         <h2 class="card-title text-2xl font-bold text-[#121212]">12.90$ - 18.85$</h2>
@@ -123,7 +250,7 @@
                 </div>
                 <div class="card w-96 border bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                        <img src="/images/fruit9.png" alt="" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center space-y-3">
                         <h2 class="card-title text-2xl font-bold text-[#121212]">12.90$ - 18.85$</h2>
